@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Log reader</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/pure.min.css" />
+    <!--[if lte IE 8]>
+      <link rel="stylesheet" href="css/side-menu-old-ie.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+      <link rel="stylesheet" href="css/side-menu.css">
+    <!--<![endif]-->
+  </head>
+  <body>
+<div id="layout">
+    <!-- Menu toggle -->
+    <a href="#menu" id="menuLink" class="menu-link">
+        <span></span>
+    </a>
+
+    <div id="menu">
+        <!--<div class="pure-menu pure-menu-open">
+            <a class="pure-menu-heading" href="/">Log Reader</a>
+	    
+            <ul>
+                <li id="li-add-file"><a href="#" id="btn-add-file">Follow new file</a></li>
+                <li>Followed Files</li>
+            </ul>
+        </div>-->
+    </div>
+
+    <div id="dialog">
+      <form class="pure-form pure-form-stacked" id="form-follow">
+        <fieldset>
+          <legend>Follow a new file</legend>
+
+          <input id="input-add-file" type="text" placeholder="File Path" />
+
+          <!--
+          <label for="filters">Filters</label>
+          <select id="filters" multiple="multiple">
+            <option>AL</option>
+            <option>CA</option>
+            <option>IL</option>
+          </select>
+          -->
+
+          <button type="submit" class="pure-button pure-button-primary">Follow</button>
+          <a href="#" class="pure-button" id="btn-cancel-add-file">Cancel</a>
+        </fieldset>
+      </form>
+    </div>
+
+    <div id="main">
+      <div id="logs"></div>
+    </div>
+
+    <script type="text/javascript" src="js/main.js"></script>
+
+  </body>
+</html>
